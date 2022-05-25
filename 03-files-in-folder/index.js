@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 
 const dir = path.join(__dirname, 'secret-folder');
-console.log(dir)
 
 fs.readdir(dir, { withFileTypes: true }, (err, dirList) => {
 	dirList.forEach(dirObj => {
